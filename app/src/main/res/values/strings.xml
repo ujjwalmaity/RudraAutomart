@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Rudra Automart</string>
+
+    <string name="fb">FB</string>
+    <string name="t_amp_c"><![CDATA[T&C]]></string>
+    <string name="walkin">WALKIN</string>
+    <string name="call">CALL</string>
+    <string name="test_ndrive">TEST\nDRIVE</string>
+    <string name="menu">MENU</string>
 </resources>

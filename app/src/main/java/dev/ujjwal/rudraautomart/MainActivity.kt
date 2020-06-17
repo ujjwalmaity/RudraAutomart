@@ -20,6 +20,23 @@ class MainActivity : AppCompatActivity() {
         for (i in images) {
             flipperImages(i)
         }
+
+        main_iv_next.setOnClickListener {
+            view_flipper.stopFlipping()
+            view_flipper.setInAnimation(this, R.anim.slide_in_right)
+            view_flipper.setOutAnimation(this, R.anim.slide_out_left)
+            view_flipper.showNext()
+            view_flipper.startFlipping()
+        }
+        main_iv_previous.setOnClickListener {
+            view_flipper.stopFlipping()
+            view_flipper.setInAnimation(this, R.anim.slide_in_left)
+            view_flipper.setOutAnimation(this, R.anim.slide_out_right)
+            view_flipper.showPrevious()
+            view_flipper.startFlipping()
+            view_flipper.setInAnimation(this, R.anim.slide_in_right)
+            view_flipper.setOutAnimation(this, R.anim.slide_out_left)
+        }
     }
 
     private fun flipperImages(image: Int) {
